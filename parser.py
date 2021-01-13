@@ -43,6 +43,7 @@ def main():
     args = parser.parse_args()
     args = args.__dict__
     file_parser(args["inputfile"], args["seq"])
+	
 
 
 if __name__ == "__main__":
