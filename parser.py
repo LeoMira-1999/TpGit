@@ -34,7 +34,6 @@ def file_parser(inputfile, sequence):
     for attribute, seq in results.items():
         print(attribute+"\n"+seq+"\n")
 
-
 def main():
     """
     function that initiate launching sequence
@@ -43,7 +42,7 @@ def main():
     args = parser.parse_args()
     args = args.__dict__
     file_parser(args["inputfile"], args["seq"])
-	
+
 
 
 if __name__ == "__main__":
