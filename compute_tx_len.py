@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+@author: Leonardo Mirandola
+"""
+
 
 import re #import regex
 
