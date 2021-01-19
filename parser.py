@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# -- coding: utf-8 --
 
 import argparse
 
 def create_parser():
     """
     parsing function to add argument
-	"""
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument('-i','--inputfile', type=argparse.FileType('r'),
     metavar='FASTA', required=True)
@@ -16,7 +16,7 @@ def create_parser():
 def file_parser(inputfile, sequence):
     """
     file parser to retreive sequence from sequence ID
-	"""
+    """
     results = {}
     for attribute in sequence:
 
@@ -37,7 +37,7 @@ def file_parser(inputfile, sequence):
 def main():
     """
     function that initiate launching sequence
-	"""
+    """
     parser = create_parser()
     args = parser.parse_args()
     args = args.__dict__
